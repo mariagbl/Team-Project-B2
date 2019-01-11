@@ -1,0 +1,45 @@
+.header-site {
+	background-image: url(background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	padding-top: 300px;
+	padding-bottom: 300px;
+
+}
+
+.content-site {
+	background-image: url(wall.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+p {
+    font-size:14px;
+    color:#538b01;
+    font-weight:bold;
+    font-style:italic;
+}
+
+mark.red {
+	font-size:90px;
+    color:#ff0000;
+    background: none;
+}
+
+mark.blue {
+    color:#25B0FA;
+    background: none;
+}
+
+mark.olivegreen {
+    color:#E1EDC4;
+    background: none;
+}
