@@ -21,6 +21,18 @@
 	padding-bottom: 200px;
 }
 
+.inside-site {
+	background-image: url(wall.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	padding-left: 100px;
+	padding-right: 100px;
+
 p {
     font-size:14px;
     color:#538b01;
@@ -41,5 +53,10 @@ mark.blue {
 
 mark.olivegreen {
     color:#E1EDC4;
+    background: none;
+}
+
+rect.steelblue {
+    color:#F38808;
     background: none;
 }
