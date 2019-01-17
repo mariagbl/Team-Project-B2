@@ -17,237 +17,253 @@ var svg = d3.select("body")
 
 var data = [
   {
-    "Date ": "6/15",
+    "date": "6/15",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "20"
   },
   {
-    "Date ": "7/15",
+    "date": "7/15",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "65"
   },
   {
-    "Date ": "8/15",
+    "date": "8/15",
     "Tweets About the Wall": "3",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "6"
   },
   {
-    "Date ": "9/15",
+    "date": "9/15",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "5"
   },
   {
-    "Date ": "10/15",
+    "date": "10/15",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "15"
   },
   {
-    "Date ": "11/15",
+    "date": "11/15",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "20"
   },
   {
-    "Date ": "12/15",
+    "date": "12/15",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "6"
   },
   {
-    "Date ": "1/16",
+    "date": "1/16",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "3"
   },
   {
-    "Date ": "2/16",
+    "date": "2/16",
     "Tweets About the Wall": "5",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "18"
   },
   {
-    "Date ": "3/16",
+    "date": "3/16",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "10"
   },
   {
-    "Date ": "4/16",
+    "date": "4/16",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "5"
   },
   {
-    "Date ": "5/16",
+    "date": "5/16",
     "Tweets About the Wall": "3",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "8"
   },
   {
-    "Date ": "6/16",
+    "date": "6/16",
     "Tweets About the Wall": "0",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "14"
   },
   {
-    "Date ": "7/16",
+    "date": "7/16",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "6"
   },
   {
-    "Date ": "8/16",
+    "date": "8/16",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "13"
   },
   {
-    "Date ": "9/16",
+    "date": "9/16",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "8"
   },
   {
-    "Date ": "10/16",
+    "date": "10/16",
     "Tweets About the Wall": "0",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "11"
   },
   {
-    "Date ": "11/16",
+    "date": "11/16",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "3"
   },
   {
-    "Date ": "12/16",
+    "date": "12/16",
     "Tweets About the Wall": "0",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "4"
   },
   {
-    "Date ": "1/17",
+    "date": "1/17",
     "Tweets About the Wall": "5",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "15"
   },
   {
-    "Date ": "2/17",
+    "date": "2/17",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "4"
   },
   {
-    "Date ": "3/17",
+    "date": "3/17",
     "Tweets About the Wall": "0",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "1"
   },
   {
-    "Date ": "4/17",
+    "date": "4/17",
     "Tweets About the Wall": "5",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "12"
   },
   {
-    "Date ": "5/17",
+    "date": "5/17",
     "Tweets About the Wall": "0",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "1"
   },
   {
-    "Date ": "6/17",
+    "date": "6/17",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "5"
   },
   {
-    "Date ": "7/17",
+    "date": "7/17",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "6"
   },
   {
-    "Date ": "8/17",
+    "date": "8/17",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "15"
   },
   {
-    "Date ": "9/17",
+    "date": "9/17",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "11"
   },
   {
-    "Date ": "10/17",
+    "date": "10/17",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "4"
   },
   {
-    "Date ": "11/17",
+    "date": "11/17",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "6"
   },
   {
-    "Date ": "12/17",
+    "date": "12/17",
     "Tweets About the Wall": "5",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "9"
   },
   {
-    "Date ": "1/18",
+    "date": "1/18",
     "Tweets About the Wall": "13",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "40"
   },
   {
-    "Date ": "2/18",
+    "date": "2/18",
     "Tweets About the Wall": "6",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "25"
   },
   {
-    "Date ": "3/18",
+    "date": "3/18",
     "Tweets About the Wall": "10",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "23"
   },
   {
-    "Date ": "4/18",
+    "date": "4/18",
     "Tweets About the Wall": "7",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "32"
   },
   {
-    "Date ": "5/18",
+    "date": "5/18",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "13"
   },
   {
-    "Date ": "6/18",
+    "date": "6/18",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "60"
   },
   {
-    "Date ": "7/18",
+    "date": "7/18",
     "Tweets About the Wall": "3",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "34"
   },
   {
-    "Date ": "8/18",
+    "date": "8/18",
     "Tweets About the Wall": "1",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "29"
   },
   {
-    "Date ": "9/18",
+    "date": "9/18",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "13"
   },
   {
-    "Date ": "10/18",
+    "date": "10/18",
     "Tweets About the Wall": "2",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "50"
   },
   {
-    "Date ": "11/18",
+    "date": "11/18",
     "Tweets About the Wall": "4",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "33"
   },
   {
-    "Date ": "12/18",
+    "date": "12/18",
     "Tweets About the Wall": "50",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "59"
   },
   {
-    "Date ": "1/19",
+    "date": "1/19",
     "Tweets About the Wall": "19",
     "Tweets About Latin American Migrants, Asylees and Immigrants": "34"
   }
 ]
 // Changed year format 
-var parse = d3.time.format("%y").parse;
+var parse = d3.time.format("%m/%y").parse;
 
 // Added our terms to d3 data set 
 //Changed fruits term to Tweets  
 // Template: Transpose the data into layers
-var dataset = d3.layout.stack()(["Tweets About the Wall", "Tweets About Latin American Migrants, Asylees and Immigrants"].map(function(Tweets) {
+var stackFn =  d3.layout.stack();
+// var dataset = stackFn(
+//   ["Tweets About the Wall", 
+//   "Tweets About Latin American Migrants, Asylees and Immigrants"]
+//     .map(function(Tweets) {
+//       return data.map(function(d) {
+//         var tweets = +d["Tweets About the Wall"] + (+d["Tweets About Latin American Migrants, Asylees and Immigrants"]);
+//         return {x: parse(d.date), y: tweets};
+//       });
+// }));
+
+// Transpose the data into layers
+var dataset = d3.layout.stack()(["Tweets About the Wall", 
+  "Tweets About Latin American Migrants, Asylees and Immigrants"]
+  .map(function(tweets) {
   return data.map(function(d) {
-    return {x: parse(d.year), y: +d[Tweets]};
+    return {x: parse(d.date), y: +d[tweets]};
   });
 }));
+
+console.log(dataset);
 
 
 // Template: Set x, y and colors
@@ -265,10 +281,11 @@ var colors = ["31aef7", "#e2df14"];
 
 
 // Template: Define and draw axes
+//Changed ticks 
 var yAxis = d3.svg.axis()
   .scale(y)
   .orient("left")
-  .ticks(5)
+  .ticks(105)
   .tickSize(-width, 0, 0)
   .tickFormat( function(d) { return d } );
 
