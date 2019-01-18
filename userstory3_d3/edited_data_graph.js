@@ -1,9 +1,12 @@
 // Template: Setup svg using Bostock's margin convention
 
-var margin = {top: 20, right: 160, bottom: 35, left: 30};
+//sets margins of graph.  Changed the bottom margin to help give room for the data. Tried various iterations past 35. 
+//adjusted right margin to help the chart expan slightly
+var margin = {top: 20, right: 130, bottom: 55, left: 30};
 
-var width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+// changed width and height slighly from 960x500. 
+var width = 1060 - margin.left - margin.right,
+    height = 550 - margin.top - margin.bottom;
 
 var svg = d3.select("body")
   .append("svg")
@@ -238,7 +241,7 @@ var data = [
   }
 ]
 // Changed year format 
-var parse = d3.time.format("%m/%y").parse;
+var parse = d3.time.format("%-m/%y").parse;
 
 // Added our terms to d3 data set 
 //Changed fruits term to Tweets  
@@ -267,18 +270,18 @@ console.log(dataset);
 
 
 // Template: Set x, y and colors
+//Explored with sized of bars. Slightly changed to have small space in between them. 
 var x = d3.scale.ordinal()
   .domain(dataset[0].map(function(d) { return d.x; }))
 //Come back to edit first digit from 10 to 5, my guess is this is the interval to set marker for the y axis
-  .rangeRoundBands([10, width-10], 0.02);
+  .rangeRoundBands([10, width-10], 0.05);
 
 var y = d3.scale.linear()
   .domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
   .range([height, 0]);
 
 // Changed colors 
-var colors = ["31aef7", "#e2df14"];
-
+var colors = ["31aef7", "#e2df14"];10
 
 // Template: Define and draw axes
 //Changed ticks 
@@ -293,7 +296,10 @@ var yAxis = d3.svg.axis()
 var xAxis = d3.svg.axis()
   .scale(x)
   .orient("bottom")
-  .tickFormat(d3.time.format("%m/%y"));
+  .tickFormat(d3.time.format("%-m/%y"));
+  // tried rotating here since this is the x-axis data information, but didn't work.
+  //.attr("transform", "rotate (45)");
+  //.tickFormat("transform", "rotate (45)");
 
 svg.append("g")
   .attr("class", "y axis")
@@ -305,9 +311,20 @@ svg.append("g")
   //.attr('dx', '-8em')
   //.attr('dy', '.15em')
   .attr("class", "x axis")
+  //This line moves the x axis to the right or left depending on changing 0.  Trying to find how to rotate x-axis titles.
   .attr("transform", "translate(0," + height + ")")
-  //.attr('transform', 'rotate(-65)');
-  .call(xAxis);
+  //.attr("transform", "rotate(-65)");
+  .call(xAxis)
+  //trying this line of code from d3-3.x-api-reference/SVG-Axes.md 
+   .selectAll("text")
+    .attr("y", 0)
+    //this moves distance from x axis line.  Adapting slightly from 9 to 10.
+    .attr("x", 10)
+    // second variable was .35em- shift in placement of data
+    // removed semi-colon that kept code from working! Changed rotation from 90,45,55,75,65.
+    .attr("dy", ".60em")
+    .attr("transform", "rotate(65)")
+    .style("text-anchor", "start");
 
 // Need to change 
 // Template: Create groups for each series, rects for each segment 
@@ -356,8 +373,8 @@ legend.append("text")
   .text(function(d, i) { 
 // adapted from 4 returns to match our two datasets 
     switch (i) {
-      case 0: return "Tweets About Latin American Migrants, Asylees and Immigrants";
-      case 1: return "Tweets About the Wall";
+      case 0: return "Migrant Tweets";
+      case 1: return "Wall Tweets";
         }
   });
 
@@ -379,3 +396,11 @@ tooltip.append("text")
   .style("text-anchor", "middle")
   .attr("font-size", "12px")
   .attr("font-weight", "bold");
+
+//Code to help grid lines appear  
+    // chart.append(‘g’)
+    //   .attr(‘class’, ‘grid’)
+    //   .call(d3.axisLeft()
+    //   .scale(yScale)
+    //   .tickSize(-width, 0, 0)
+    //   .tickFormat(‘’))
