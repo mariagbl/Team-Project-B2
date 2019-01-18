@@ -285,23 +285,28 @@ var colors = ["31aef7", "#e2df14"];
 var yAxis = d3.svg.axis()
   .scale(y)
   .orient("left")
-  .ticks(105)
+  .ticks(10)
   .tickSize(-width, 0, 0)
   .tickFormat( function(d) { return d } );
 
-// Changed year format 
+// Changed month and year format 
 var xAxis = d3.svg.axis()
   .scale(x)
   .orient("bottom")
-  .tickFormat(d3.time.format("%y"));
+  .tickFormat(d3.time.format("%m/%y"));
 
 svg.append("g")
   .attr("class", "y axis")
   .call(yAxis);
 
 svg.append("g")
+  //.selectAll('text')
+  //.style('text-anchor', 'end')
+  //.attr('dx', '-8em')
+  //.attr('dy', '.15em')
   .attr("class", "x axis")
   .attr("transform", "translate(0," + height + ")")
+  //.attr('transform', 'rotate(-65)');
   .call(xAxis);
 
 // Need to change 
