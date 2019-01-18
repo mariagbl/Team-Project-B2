@@ -1,0 +1,27 @@
+svg {
+  font: 6px sans-serif;
+  shape-rendering: crispEdges;
+}
+
+/*added this to help edit size of text on graph thanks to Ori's help.*/
+text {
+  font-size: 10px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}
+
+path.domain {
+  stroke: none;
+}
+
+.y .tick line {
+  stroke: #ddd;
+}
+
+.tick {
+  color: red;
+}
