@@ -2,7 +2,8 @@
 
 //sets margins of graph.  Changed the bottom margin to help give room for the data. Tried various iterations past 35. 
 //adjusted right margin to help the chart expan slightly
-var margin = {top: 20, right: 130, bottom: 55, left: 30};
+// Change for label in legend not here either because already adapted and only fixes margins of total graph. 
+var margin = {top: 20, right: 130, bottom: 60, left: 30};
 
 // changed width and height slighly from 960x500. 
 var width = 1060 - margin.left - margin.right,
@@ -240,7 +241,7 @@ var data = [
     "Tweets About Latin American Migrants, Asylees and Immigrants": "34"
   }
 ]
-// Changed year format 
+// Changed year and month format 
 var parse = d3.time.format("%-m/%y").parse;
 
 // Added our terms to d3 data set 
@@ -301,11 +302,15 @@ var xAxis = d3.svg.axis()
   //.attr("transform", "rotate (45)");
   //.tickFormat("transform", "rotate (45)");
 
+//I think this is where I can make sure the grid lines display 
 svg.append("g")
   .attr("class", "y axis")
   .call(yAxis);
+  //<line x2="770" y2="0"></line>
+
 
 svg.append("g")
+  // Tried this code from Jake S. who used it to rotate his axis, but didn't work well on mine.
   //.selectAll('text')
   //.style('text-anchor', 'end')
   //.attr('dx', '-8em')
@@ -315,7 +320,7 @@ svg.append("g")
   .attr("transform", "translate(0," + height + ")")
   //.attr("transform", "rotate(-65)");
   .call(xAxis)
-  //trying this line of code from d3-3.x-api-reference/SVG-Axes.md 
+  //trying this line of code for x-axis data tilt from d3-3.x-api-reference/SVG-Axes.md 
    .selectAll("text")
     .attr("y", 0)
     //this moves distance from x axis line.  Adapting slightly from 9 to 10.
@@ -334,6 +339,7 @@ var groups = svg.selectAll("g.cost")
   .attr("class", "cost")
   .style("fill", function(d, i) { return colors[i]; });
 
+//I think this is where I can change the height of the bars to help with the scale of the y axis but am not sure how to do this.
 var rect = groups.selectAll("rect")
   .data(function(d) { return d; })
   .enter()
@@ -359,12 +365,14 @@ var legend = svg.selectAll(".legend")
   .attr("class", "legend")
   .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
  
+ //Tried to make more room for label here, but decided it needs to be dealt with in margins.
 legend.append("rect")
   .attr("x", width - 18)
   .attr("width", 18)
   .attr("height", 18)
   .style("fill", function(d, i) {return colors.slice().reverse()[i];});
- 
+
+//tried to change space for text on legend here but couldn't accomodate all text.  
 legend.append("text")
   .attr("x", width + 5)
   .attr("y", 9)
@@ -373,8 +381,8 @@ legend.append("text")
   .text(function(d, i) { 
 // adapted from 4 returns to match our two datasets 
     switch (i) {
-      case 0: return "Migrant Tweets";
-      case 1: return "Wall Tweets";
+      case 0: return "People + Wall";
+      case 1: return "Wall";
         }
   });
 
