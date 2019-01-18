@@ -1,5 +1,5 @@
-var margin = {top: 40, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
+var margin = {top: 40, right: 40, bottom: 30, left: 40},
+    width =1500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var formatPercent = d3.format("0");
@@ -48,8 +48,8 @@ d3.csv("data.csv", type, function(error, data) {
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
+      .attr("y", 8)
+      .attr("dy", ".50em")
       .style("text-anchor", "end")
       .text("Frequency");
 
