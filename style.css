@@ -1,62 +1,55 @@
-.header-site {
-	background-image: url(background.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	color: #ffffff;
-	padding-top: 300px;
-	padding-bottom: 300px;
-
+body {
+  font: 20px lato;
 }
 
-.content-site {
-	background-image: url(wall.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	color: #ffffff;
-	padding-top: 200px;
-	padding-bottom: 200px;
+#chart-container{
+  padding: 0 25%;
 }
 
-.inside-site {
-	background-image: url(wall.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	color: #ffffff;
-	padding-top: 200px;
-	padding-bottom: 200px;
-	padding-left: 100px;
-	padding-right: 100px;
-
-p {
-    font-size:14px;
-    color:#538b01;
-    font-weight:bold;
-    font-style:italic;
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
 
-mark.red {
-	font-size:90px;
-    color:#ff0000;
-    background: none;
+.bar {
+  fill: orange;
 }
 
-mark.blue {
-    color:#25B0FA;
-    background: none;
+.bar:hover {
+  fill: orangered ;
 }
 
-mark.olivegreen {
-    color:#E1EDC4;
-    background: none;
+.x.axis path {
+  display: none;
 }
 
-rect.steelblue {
-    color:#F38808;
-    background: none;
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
 }
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0.8, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+} 
