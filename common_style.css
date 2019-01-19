@@ -5,6 +5,61 @@ p {
     font-style:italic;
 }
 
+# pagetitle {font-size:14px;
+  font-weight:bold;
+  color:#538b01;
+  text-align: center;
+}*/
+
+
+.subtitle {font-size:12px;
+  font-style:italic;
+  color:#538b01;
+  text-align: center;
+}
+
+.chart{
+  text-align: center
+}
+
+.belowchart {font-size:10px;
+  font-style:italic;
+  color:#538b01;
+  text-align: center;
+}
+
+.analysis {font-size:14px;
+  color:#538b01;
+  text-align: center
+}
+
+.source {font-size:10px;
+  font-style:italic;
+  color:#538b01;
+  text-align: center
+}
+
+/*Referencing class assignment css to modify this one*/
+/*p, li, h1 {
+  color: red;
+}
+
+html {
+  background-color: #00539F;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+.quote { 
+  border: 1px solid black;
+}
+#corevalues {border: 1px solid black;
+}*/
 /*mark.red {
 	font-size:90px;
     color:#ff0000;
@@ -33,7 +88,8 @@ rect.steelblue {
   font: 10px sans-serif;
 }
 */
-.axis path,
+/*Learned that this code would not work for the styling we wanted.*/
+/*.axis path,
 .axis line {
   fill: none;
   stroke: #000;
@@ -58,4 +114,4 @@ rect.steelblue {
 .focus circle {
   fill: none;
   stroke: steelblue;
-}
+}*/
