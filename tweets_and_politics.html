@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- //chart from Michael Stanaland's Block, thanks for sharing! 
+//source:http://bl.ocks.org/mstanaland/6100713
+// Removed JS and CSS code and put into own files
+//Slightly reformatted code structure  -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- This is the title for the internet tab -->
+  <title>Tweets_and_politics</title>
+  <!--   This is the css style for the font from homepage.  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- This is the css link for styling the same across all of our additional pages. -->
+  <link rel="stylesheet" type="text/css" href="../common_style.css">
+</head>
+
+<body>
+  <!-- Add Main Page Title Here- Will Appeat at Top of the Page that will Open -->
+  <h1 id="pagetitle">Trump's Tweets About the Wall</h1>
+
+  <!-- Add Subl Title of Page Title Here if desired -->
+  <p class="subtitle">Total Number of Trump Tweets from June 2015-Present Day</p>
+
+  <!-- This is supposed to center whatever graphic you have, if you have problems, screen shot this code and ask Dhrumhil how we should change the id here for your specific picture/graph -->
+  <div id="wallvspeoplechart" class="chart"></div>
+
+  <!-- This is for any small text that needs to go below the chart to explain to the reader how to read it before the data analysis. -->
+  <p class="belowchart"> In this series of graphs, we analyze President Trump’s rhetoric around the wall from the campaign trail until present day. The graph above shows President Trump’s total number of tweets about the wall in relation to total number of tweets about Latin American migrants, asylees, and immigrants from June 2015-January 2019.
+    <!-- Here are bullets if desired for small below graph text -->
+  <ul class="belowchart">
+	   <li>The Y-axis scale = Total number of tweets from both categories measured.</li>  
+	   <li>To see the number of tweets per month in each category move your mouse over the columns.</li>  
+  </ul>
+
+  <!-- Here is the category where you can create a title for your graph data analysis, if we want we can call each of our sections takeaways to create consistency across pages. -->
+  <p class="subtitle">Takeaways:<br>
+
+  <!-- This is where you write your data analysis. -->
+  <p class="analysis"> To contextualize how "the wall” works as part of a broader Trumpian conversation, we analyzed a list of terms Trump frequently uses when referring to those crossing the border. In these tweets Trump discusses migrations issues, concerns about the US-Mexico border, impressions on the caravan, etc. The graph lets us see a more consistent trend in the discussion of migration-related issues by Donald Trump.President Trump’s references to migration terms far exceeds his references to the border wall itself.  
+
+  <!-- This is a link model if you need it for your analysis -->
+
+	<li>2018:  Trump’s use of tweets towards people crossing the boarder and the wall increased overall in 2018. 
+	December 2018 and January 2019: This increasing trend reached fever-pitch in just the last two months around the decision to shut down the U.S. government over demands for congressional approval to fund a boarder wall.  For the first time since Trump began his campaign for the wall and against the people arriving at the U.S border, tweets about the wall (50) almost match tweets about migration (59) in December 2018.  For every 100 tweets addressing migration, at least half of them mention the “wall.”  
+
+	<!-- These are where you link to your d3 java, and your other java formating, no editing needed for css or home page links -->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="./2.The_wall_in_context/data/Front_end/the_wall_in_context.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+<!-- LICENSE#
+This block appears to have no license. Please contact the author to request a license. -->
