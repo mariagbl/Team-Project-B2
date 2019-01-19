@@ -25,7 +25,7 @@ var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
 
-var svg = d3.select("body").append("svg")
+var svg2 = d3.select("#chartRetweet").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -46,12 +46,12 @@ d3.tsv("datas/ratio_TweetRetweet2.tsv", function(error, data) {
   x.domain([data[0].date, data[data.length - 1].date]);
   y.domain(d3.extent(data, function(d) { return d.close; }));
 
-  svg.append("g")
+  svg2.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
-  svg.append("g")
+  svg2.append("g")
       .attr("class", "y axis")
       .call(yAxis)
     .append("text")
@@ -61,28 +61,28 @@ d3.tsv("datas/ratio_TweetRetweet2.tsv", function(error, data) {
       .style("text-anchor", "end")
       .text("Ratio Retweet per Tweet");
 
-  svg.append("path")
+  svg2.append("path")
       .datum(data)
       .attr("class", "line")
       .attr("d", line);
 
-  var focus = svg.append("g")
+  var focus2 = svg2.append("g")
       .attr("class", "focus")
       .style("display", "none");
 
-  focus.append("circle")
+  focus2.append("circle")
       .attr("r", 4.5);
 
-  focus.append("text")
+  focus2.append("text")
       .attr("x", 9)
       .attr("dy", ".35em");
 
-  svg.append("rect")
+  svg2.append("rect")
       .attr("class", "overlay")
       .attr("width", width)
       .attr("height", height)
-      .on("mouseover", function() { focus.style("display", null); })
-      .on("mouseout", function() { focus.style("display", "none"); })
+      .on("mouseover", function() { focus2.style("display", null); })
+      .on("mouseout", function() { focus2.style("display", "none"); })
       .on("mousemove", mousemove);
 
   function mousemove() {
@@ -91,7 +91,7 @@ d3.tsv("datas/ratio_TweetRetweet2.tsv", function(error, data) {
         d0 = data[i - 1],
         d1 = data[i],
         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-    focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
-    focus.select("text").text(d.close);
+    focus2.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
+    focus2.select("text").text(d.close);
   }
 });
