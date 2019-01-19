@@ -8,7 +8,7 @@ p {
 
 
 #pagetitle {
-  font-size:12px;
+  font-size:20px;
   font-family: 'Lato';
   font-weight:bold;
   color:#424949;
@@ -16,7 +16,7 @@ p {
 }
 
 .subtitle {
-  font-size:12px;
+  font-size:18px;
   font-family: 'Lato';
   font-style:italic;
   color:#424949;
@@ -28,7 +28,7 @@ p {
 }
 
 .belowchart {
-  font-size:10px;
+  font-size:12px;
   font-family: 'Lato';
   font-style:italic;
   color:#424949;
@@ -38,7 +38,7 @@ p {
 }
 
 .analysis {
-  font-size:14px;
+  font-size:16px;
   font-family:'Lato';
   color:#424949;
   text-align: center

@@ -9,7 +9,7 @@ var margin = {top: 20, right: 130, bottom: 60, left: 30};
 var width = 1060 - margin.left - margin.right,
     height = 550 - margin.top - margin.bottom;
 
-var svg = d3.select("body")
+var svg = d3.select("#wallvspeoplechart")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -381,8 +381,8 @@ legend.append("text")
   .text(function(d, i) { 
 // adapted from 4 returns to match our two datasets 
     switch (i) {
-      case 0: return "People + Wall";
-      case 1: return "Wall";
+      case 0: return "Migration Tweets";
+      case 1: return "Wall Tweets";
         }
   });
 
