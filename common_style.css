@@ -1,0 +1,61 @@
+p {
+    font-size:14px;
+    color:#538b01;
+    font-weight:bold;
+    font-style:italic;
+}
+
+/*mark.red {
+	font-size:90px;
+    color:#ff0000;
+    background: none;
+}
+
+mark.blue {
+    color:#25B0FA;
+    background: none;
+}
+
+mark.olivegreen {
+    color:#E1EDC4;
+    background: none;
+}
+
+rect.steelblue {
+    color:#F38808;
+    background: none;
+}
+*/
+
+/*Victor and Karishma's Style */
+
+/*body {
+  font: 10px sans-serif;
+}
+*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
