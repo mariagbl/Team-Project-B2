@@ -1,20 +1,25 @@
 p {
     font-size:14px;
-    color:#538b01;
-    font-weight:bold;
-    font-style:italic;
+    font-family: 'Lato';
+    color:#424949;
+     /*   font-weight:bold;
+    font-style:italic*//*;*/
 }
 
-# pagetitle {font-size:14px;
+
+#pagetitle {
+  font-size:12px;
+  font-family: 'Lato';
   font-weight:bold;
-  color:#538b01;
+  color:#424949;
   text-align: center;
-}*/
+}
 
-
-.subtitle {font-size:12px;
+.subtitle {
+  font-size:12px;
+  font-family: 'Lato';
   font-style:italic;
-  color:#538b01;
+  color:#424949;
   text-align: center;
 }
 
@@ -22,20 +27,28 @@ p {
   text-align: center
 }
 
-.belowchart {font-size:10px;
+.belowchart {
+  font-size:10px;
+  font-family: 'Lato';
   font-style:italic;
-  color:#538b01;
-  text-align: center;
+  color:#424949;
+  /*text-align: center;*/
+  margin: 0 auto;
+  width: 50%;
 }
 
-.analysis {font-size:14px;
-  color:#538b01;
+.analysis {
+  font-size:14px;
+  font-family:'Lato';
+  color:#424949;
   text-align: center
 }
 
-.source {font-size:10px;
+.source {
+  font-size:10px;
+  font-family: 'Lato';
   font-style:italic;
-  color:#538b01;
+  color:#424949;
   text-align: center
 }
 
