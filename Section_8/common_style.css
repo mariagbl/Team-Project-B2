@@ -1,0 +1,119 @@
+p {
+    font-size:14px;
+    font-family: 'Lato';
+    color:#424949;
+     /*   font-weight:bold;
+    font-style:italic*//*;*/
+}
+
+
+#pagetitle {
+  font-size:22px;
+  font-family: 'Lato';
+  font-weight:bold;
+  color:#424949;
+  text-align: center;
+}
+
+.subtitle {
+  font-size:20px;
+  font-family: 'Lato';
+  font-style:italic;
+  color:#424949;
+  text-align: center;
+}
+
+
+
+
+.analysis {
+  font-size:20px;
+  font-family:'Lato';
+  color:#424949;
+  text-align: justify;
+}
+
+.source {
+  font-size:10px;
+  font-family: 'Lato';
+  font-style:italic;
+  color:#424949;
+  text-align: center
+}
+
+*Referencing class assignment css to modify this one*/
+*p, li, h1 {
+  color: red;
+}
+
+html {
+  background-color: ;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: ;
+  padding: 0 20px 20px 20px;
+
+}
+.quote { 
+  border: 1px solid black;
+}
+#corevalues {border: 1px solid black;
+}*/
+/*mark.red {
+	font-size:90px;
+    color:#ff0000;
+    background: none;
+}
+
+mark.blue {
+    color:#25B0FA;
+    background: none;
+}
+
+mark.olivegreen {
+    color:#E1EDC4;
+    background: none;
+}
+
+rect.steelblue {
+    color:#F38808;
+    background: none;
+}
+*/
+
+/*Victor and Karishma's Style */
+
+/*body {
+  font: 10px sans-serif;
+}
+*/
+/*Learned that this code would not work for the styling we wanted.*/
+/*.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}*/
