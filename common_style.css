@@ -52,8 +52,8 @@ p {
   text-align: center
 }
 
-/*Referencing class assignment css to modify this one*/
-/*p, li, h1 {
+*Referencing class assignment css to modify this one*/
+*p, li, h1 {
   color: red;
 }
 
