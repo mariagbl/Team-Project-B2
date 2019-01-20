@@ -13,6 +13,43 @@ body {
   shape-rendering: crispEdges;
 }
 
+.header-site {
+  background-image: url(./Home_photos/background.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 300px;
+  padding-bottom: 300px;
+
+}
+
+.content-site {
+  background-image: url(./Home_photos/wall.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+
+
+.inside-site {
+  background-image: url(wall.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+
 .bar {
   fill: orange;
 }
