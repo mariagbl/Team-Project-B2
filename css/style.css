@@ -26,7 +26,7 @@ body {
 }
 
 .header-site {
-  background-image: url(./background.jpg);
+  background-image: url(../Images/background.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@ body {
 }
 
 .content-site {
-  background-image: url(./Images/wall.jpg);
+  background-image: url(../Images/wall.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
