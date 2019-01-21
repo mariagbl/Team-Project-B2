@@ -26,7 +26,7 @@ body {
 }
 
 .header-site {
-  background-image: url(./background.jpg);
+  background-image: url(./Wall.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@ body {
 }
 
 .content-site {
-  background-image: url(./Images/wall.jpg);
+  background-image: url(./Wall.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@ body {
 
 
 .inside-site {
-  background-image: url(./Images/wall.jpg);
+  background-image: url(./Wall.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

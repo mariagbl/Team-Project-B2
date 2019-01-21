@@ -34,7 +34,7 @@ var svg = d3.select("#chart-container").append("svg")
 
 svg.call(tip);
 
-d3.csv("data.csv", type, function(error, data) {
+d3.csv("./data.csv", type, function(error, data) {
   x.domain(data.map(function(d) { return d.words; }));
   y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
