@@ -1,58 +1,58 @@
 var dataset = [
-  ['Jun',481,36.59044],
-  ['Jul',792,69.69697],
-  ['Aug',322,22.36025],
-  ['Sept',385,12.46753],
-  ['Oct',702,19.37322],
-  ['Nov',540,35.55556],
-  ['Dec',512,10.9375],
-  ['Jan',467,8.56531],
-  ['Feb',480,38.33333],
-  ['Mar',423,22.69504],
-  ['Apr',251,19.12351],
-  ['May',339,25.9587],
-  ['Jun',274,40.87591],
-  ['Jul',385,14.54545],
-  ['Aug',301,45.18272],
-  ['Sept',285,28.07018],
-  ['Oct',501,17.56487],
-  ['Nov',196,16.32653],
-  ['Dec',142,22.53521],
-  ['Jan',234,68.37607],
-  ['Feb',159,25.15723],
-  ['Mar',148,5.405405],
-  ['Apr',169,80.47337],
-  ['May',156,5.128205],
-  ['Jun',218,22.01835],
-  ['Jul',249,22.48996],
-  ['Aug',286,53.14685],
-  ['Sept',318,30.18868],
-  ['Oct',296,16.21622],
-  ['Nov',271,29.5203],
-  ['Dec',213,52.58216],
-  ['Jan',258,164.3411],
-  ['Feb',206,120.3883],
-  ['Mar',204,129.4118],
-  ['Apr',296,105.4054],
-  ['May',276,49.27536],
-  ['Jun',373,137.2654],
-  ['Jul',373,79.35657],
-  ['Aug',410,58.53659],
-  ['Sept',398,30.15075],
-  ['Oct',436,95.41284],
-  ['Novs',375,78.93333],
-  ['Dec',403,216.3772],
-  ['Jan',160,265]
+ ['15-Jun',36.59, 481],
+ ['15-Jul',69.69,792,],
+ ['15-Aug',22.36,322],
+ ['15-Sept', 12.46,385],
+ ['15-Oct',19.37, 702],
+ ['15-Nov',35.55,540],
+ ['15-Dec',10.93, 512,],
+ ['16-Jan',8.56, 467],
+ ['16-Feb',38.33, 480],
+ ['16-Mar',22.69, 423],
+ ['16-Apr',19.12, 251],
+ ['16-May',25.95, 339],
+ ['16-Jun',40.87, 274],
+ ['16-Jul',14.54, 385],
+ ['16-Aug',45.18, 301],
+ ['16-Sept',28.07, 285],
+ ['16-Oct',17.56, 501],
+ ['16-Nov',16.32, 196],
+ ['16-Dec',22.53, 142],
+ ['17-Jan',68.37, 234],
+ ['17-Feb',25.15, 159],
+ ['17-Mar',5.40, 148],
+ ['17-Apr',80.47, 169],
+ ['17-May',5.12, 156],
+ ['17-Jun',22.01, 218],
+ ['17-Jul',22.48, 249],
+ ['17-Aug',53.14, 286],
+ ['17-Sept',30.18, 318],
+ ['17-Oct',16.21, 296],
+ ['17-Nov',29.52, 271],
+ ['17-Dec',52.58, 213],
+ ['18-Jan',164.34, 258],
+ ['18-Feb',120.38, 206],
+ ['18-Mar',129.41, 204],
+ ['18-Apr',105.40, 296],
+ ['18-May',49.27, 276],
+ ['18-Jun',137.26, 373],
+ ['18-Jul',79.35, 373],
+ ['18-Aug',58.53, 410],
+ ['18-Sept',30.15, 398],
+ ['18-Oct',95.41, 436],
+ ['18-Nov',78.93, 375],
+ ['18-Dec',216.37, 403],
+ ['19-Jan',160,265]
 
-  ];
+ ];
 
-  var margin = {top: 20, right: 20, bottom: 30, left: 40},
-      width = 800,
-      height = 400;
+  var margin = {top: 100, right: 100, bottom: 30, left: 40},
+      width = 1800,
+      height = 500;
 
   var xScale = d3.scaleBand()
                 .rangeRound([0, width])
-                .padding(0.2)
+                .padding(0)
                 .domain(dataset.map(function(d) {
                   return d[0];
                 }));
@@ -97,7 +97,7 @@ var dataset = [
   // bar chart
   bar.append("rect")
     .attr("x", function(d) { return xScale(d[0]); })
-    .attr("y", function(d) { return yScale(d[2]); }) // changed from 2 =0
+    .attr("y", function(d) { return yScale(d[2]); }) // 
     .attr("y2", function(d) { return y2Scale(d[2]); })
     .attr("width", xScale.bandwidth())
     .attr("height", function(d) { return height - yScale(d[2]); })
@@ -116,12 +116,12 @@ var dataset = [
   // labels on the bar chart
   bar.append("text")
     .attr("dy", "1.3em")
-    .attr("x", function(d) { return xScale(d[0]) + xScale.bandwidth() / 2; })
+    .attr("x", function(d) { return xScale(d[0]) + xScale.bandwidth() / 2;})
     .attr("y", function(d) { return yScale(d[2]); })
     .attr("y2", function(d) { return y2Scale(d[2]); })
     .attr("text-anchor", "middle")
     .attr("font-family", "sans-serif")
-    .attr("font-size", "11px")
+    .attr("font-size", "10px")
     .attr("fill", "black")
     .text(function(d) {
       return d[2];
