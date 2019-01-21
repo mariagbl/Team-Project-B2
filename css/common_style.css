@@ -15,6 +15,12 @@ p {
   text-align: center;
 }
 
+.chart {
+
+  text-transform: 'center';
+
+}
+
 .subtitle {
   font-size:20px;
   font-family: 'Lato';
@@ -22,9 +28,6 @@ p {
   color:#424949;
   text-align: center;
 }
-
-
-
 
 .analysis {
   font-size:20px;
