@@ -31,7 +31,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data/Script/ratio/ratio_TweetLike2.tsv", function(error, data) {
+d3.tsv("data/Script/ratio/ratio_TweetRetweet2.tsv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
