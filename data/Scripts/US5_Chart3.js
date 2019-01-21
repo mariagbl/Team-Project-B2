@@ -31,7 +31,7 @@ var svg2 = d3.select("#chartRetweet").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("datas/ratio_TweetRetweet2.tsv", function(error, data) {
+d3.tsv("./ratio_TweetRetweet2.tsv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
