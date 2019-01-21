@@ -41,8 +41,8 @@ p {
   text-align: center
 }
 
-*Referencing class assignment css to modify this one*/
-*p, li, h1 {
+/*/**Referencing class assignment css to modify this one*/
+/**p, li, h1 {
   color: red;
 }
 
@@ -60,7 +60,7 @@ body {
 .quote { 
   border: 1px solid black;
 }
-#corevalues {border: 1px solid black;
+#corevalues {border: 1px solid black;*/*/*/
 }*/
 /*mark.red {
 	font-size:90px;
