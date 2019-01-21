@@ -100,6 +100,6 @@ function drawLineChart(CSSSelector, dataFilePath) {
 }
 
 
-drawLineChart("#chartHeart", "../datas/ratio_TweetLike2.tsv");
-drawLineChart("#chartRetweet", "datas/ratio_TweetRetweet2.tsv");
+drawLineChart("#chartHeart", "../ratio/ratio_TweetLike2.tsv");
+drawLineChart("#chartRetweet", "../ratio/ratio_TweetRetweet2.tsv");
 // drawLineChart();

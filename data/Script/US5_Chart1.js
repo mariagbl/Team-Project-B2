@@ -17,7 +17,7 @@ var x = d3.scaleLinear()		// y = d3.scaleLinear()
 var z = d3.scaleOrdinal()
     .range(["#d0743c", "#ff8c00"]);
 
-d3.csv("./data/datas/data_US5_Added1.csv", function(d, i, columns) {
+d3.csv("./data/Script/data_US5_Added1.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
   d.total = t;
   return d;
