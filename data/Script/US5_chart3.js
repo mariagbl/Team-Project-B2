@@ -59,7 +59,7 @@ d3.tsv("data/Script/ratio/ratio_TweetRetweet2.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Hearts Per Tweet");
+      .text("Retweet Per Tweet");
 
   svg.append("path")
       .datum(data)
