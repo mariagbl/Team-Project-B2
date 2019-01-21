@@ -24,7 +24,9 @@ p {
 }
 
 
-
+.chart {
+  text-align: 'center;
+}
 
 .analysis {
   font-size:20px;
