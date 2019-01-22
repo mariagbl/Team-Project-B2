@@ -20,9 +20,9 @@ Home page:
 We combined two bootstrap templates to create the look of our homepage.  The top portion with the wall is one template, the remainder of the page is another.  
 We customized the html, CSS and java of each template to include customized pictures, content and links. These two changes were then brought together into one html (index.html) css and java.  Many of the node/ bootstrap folders in our repository are linked to these templates. 
 
-    Common CSS: 
-    Thanks to Prof. Dhrumil’s advice we made a common style. CSS file, that took elements of the home page styling, like the font, and       created classes for labels that would be found in various (headings, subtitles, analysis, etc. pages. Some of these changes shifted     and although we couldn’t apply it to everything in the website, we tried hard to norm as many elements as we could.  
-    Data per website section: 
+   Common CSS: 
+   Thanks to Prof. Dhrumil’s advice we made a common style. CSS file, that took elements of the home page styling, like the font, and      created classes for labels that would be found in various (headings, subtitles, analysis, etc. pages. Some of these changes shifted      and although we couldn’t apply it to everything in the website, we tried hard to norm as many elements as we could.  
+   Data per website section: 
 
 A.Trump and the Wall (Two graphs in Excel): Twitter data from the repository listed in our references, was manipulated using pivot         tables with excel, and researching different combinations. 
 Notes: 
