@@ -11,7 +11,8 @@ II.Files:
 We worked very hard to structure our folders the way you suggested we should.  Unfortunately, with three of our d3 graphs the original paths that allowed them to function got very disturbed and after immense effort, we were not able to correct them. 
     •	Retweets and Favs d3s (with links from first page): Three teammates (Maria, Victor and Jose) each separately tried to correct the paths and were unsuccessful.  The java script files for these items are in the general folder as US5_Chart 2 and 3.
     •	Migration the Core of Trump’s Tweets and Migration Terms: (Karisma) worked hard to try and create paths within the new file structure, but then the visualizations were not appearing or functioning.  We resolved to leave the java and css for these visualizations in the general folder despite efforts to clean up the folder.  Apologies for not being able to resolve these issues.  We felt it best to submit the project as is and just flag this issue for you. 
-    •	Other: Jose had a problem operating from his branch, so the last two days (Saturday and Sunday) he worked directly from master at times.
+    •	Trello: We were unable to rename our B2 board to "User Stories", the board did not give us the options.  Sincere apologies.  The Board named B2 is where are User Stories are that did not get done in B2-Sprint 1 or B2-Sprint 2. 
+     •	Other: Jose had a problem operating from his branch, so the last two days (Saturday and Sunday) he worked directly from master at times.
     
 III. Data:
 The main source of our twitter data is cited and how it was generally manipulated is in the References portion of our website.  
