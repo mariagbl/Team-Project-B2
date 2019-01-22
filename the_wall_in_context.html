@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 
-<!-- //chart from Michael Stanaland's Block, thanks for sharing! 
-//source:http://bl.ocks.org/mstanaland/6100713
-// Removed JS and CSS code and put into own files
-//Slightly reformatted code structure  -->
+    <!-- //chart from Michael Stanaland's Block, thanks for sharing! 
+    //source:http://bl.ocks.org/mstanaland/6100713 -->
+    <!--  Steps:  -->
+    <!--  // Removed JS and CSS code and put into own files
+    //Slightly reformatted code structure  -->
 
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <!--   added html to match how other teammates wanted to structure each chart page. -->
-  <!-- adding class and id information -->
+    <!-- Steps:  -->
+      <!--   added html to match how other teammates wanted to structure each chart page. -->
+      <!-- adding class and id information -->
   <title>The_Wall_in_Context</title>
-  <!-- realized late in the game that the CSS wasn't being pulled! I fized the js script from head to body and added an href to css in order to have it be read on graph  -->
+  <!-- Steps: -->
+    <!-- realized late in the game that the CSS wasn't being pulled! I fized the js script from head to body and added an href to css in order to have it be read on graph  -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="./data/wall_in_context_data/Front_end/the_wall_in_context.css">
   <link rel="stylesheet" type="text/css" href="./css/common_style.css">
-  <!--  <li> example link if needed: <a href="our-team/jose.html">Jose Luis</a></li> -->
-
-  <!-- <line x2="770" y2="0"></line> -->
-  <!-- tried to fix grid lines here.  -->
+  <!-- Self notes: -->
+    <!--  <li> example link if needed: <a href="our-team/jose.html">Jose Luis</a></li> -->
+    <!-- <line x2="770" y2="0"></line> -->
+    <!-- tried to fix grid lines here.  -->
 </head>
 
 <body>
@@ -28,7 +31,8 @@
   <h1 id="pagetitle">President Trump Tweets More About Migration to the Border Than About the Wall</h1>
   <p class="subtitle">Number of Tweets about Latin American  Asylees, Migrants, and Immigrants and Number of Tweets about “The Wall”. </p>
 
-  <div id="wallvspeoplechart" class="chart"></div>
+  <center>
+  <div id="wallvspeoplechart" class="chart"></div> </center>
 
 
   <p class="belowchart"> In this series of graphs, we analyze President Trump’s rhetoric around the wall from the campaign trail until present day. The graph above shows President Trump’s total number of tweets about the wall in relation to total number of tweets about Latin American migrants, asylees, and immigrants from June 2015-January 2019.  The Y-axis scale = Total number of tweets from both categories measured.  To see the number of tweets per month in each category move your mouse over the columns.</li>  
@@ -39,14 +43,14 @@
   <p class="analysis"> To contextualize how "the wall” works as part of a broader Trumpian conversation, we analyzed a list of terms Trump frequently uses when referring to those crossing the border. In these tweets Trump discusses migrations issues, concerns about the US-Mexico border, impressions on the caravan, etc. The graph lets us see a more consistent trend in the discussion of migration-related issues by Donald Trump.President Trump’s references to migration terms far exceeds his references to the border wall itself.<br>  
 
   <ul class="analysis"> 
-  <li>July 2015: A month after Trump’s candidacy is announced, is one of the top months he tweets about those crossing the border (65), in comparison to the wall (4).  The difference in volume suggests that the topic succeeded at attracting media attention and exciting the Republican base. Nevertheless, at this point, the stress on “the wall” via twitter as a communication channel was minimal (only 2 tweets in June, and 4 in July).<br>
+  <li>July 2015: A month after Trump’s candidacy is announced, is one of the top months he tweets about those crossing the border (65), in comparison to the wall (4).  The difference in volume suggests that the topic succeeded at attracting media attention and exciting the Republican base. Nevertheless, at this point, the stress on “the wall” via twitter as a communication channel was minimal (only 2 tweets in June, and 4 in July).
 
-  <li>2018:  Trump’s use of tweets towards people crossing the boarder and the wall increased overall in 2018. 
-  December 2018 and January 2019: This increasing trend reached fever-pitch in just the last two months around the decision to shut down the U.S. government over demands for congressional approval to fund a boarder wall.  For the first time since Trump began his campaign for the wall and against the people arriving at the U.S border, tweets about the wall (50) almost match tweets about migration (59) in December 2018.  For every 100 tweets addressing migration, at least half of them mention the “wall.”<br>  
+  <li>2018:  Trump’s use of tweets towards people crossing the border and the wall increased overall in 2018. 
+  December 2018 and January 2019: This increasing trend reached fever-pitch in just the last two months around the decision to shut down the U.S. government over demands for congressional approval to fund a border wall.  For the first time since Trump began his campaign for the wall and against the people arriving at the U.S border, tweets about the wall (50) almost match tweets about migration (59) in December 2018.  For every 100 tweets addressing migration, at least half of them mention the “wall.”  
 
-  <li>Overall, Trump’s focus of tweeting about migration confirm what analysts have observed throughout this time on the campaign trail and in office-- his strategy for the wall is also fueled by focusing on those who reach the boarder.<br>
+  <li>Overall, Trump’s focus of tweeting about migration confirm what analysts have observed throughout his time on the campaign trail and in office-- his strategy for the wall is fueled by focusing on those who reach the border.
 
-  <p class= "analysis"><a href="../references.html">Checkout our methodology on migration terms for this visualization.</a></p>
+  <p class="analysis"><a href="../references.html">Checkout our methodology on migration terms for this visualization.</a></p>
 
   <p class="sources"> Sources: Data- @realDonaldTrump’s twitter feed: trumptwitterarchive.com/archive. Graph- d3 Chart from Michael Stanaland Bl.ocks.org (6100713).</p>
   
@@ -56,8 +60,6 @@
 </body> 
 
 </html>
-
-
 
 <!-- LICENSE#
 This block appears to have no license. Please contact the author to request a license. -->
